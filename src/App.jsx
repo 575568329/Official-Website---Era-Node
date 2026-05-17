@@ -1,15 +1,16 @@
-﻿import { lazy, Suspense } from 'react';
-import ThemeSwitcher from './components/ThemeSwitcher';
+import { lazy, Suspense } from 'react';
 
 // 非首屏组件懒加载
 const Navbar = lazy(() => import('./components/Navbar'));
 const Hero = lazy(() => import('./components/Hero'));
+const HowItWorks = lazy(() => import('./components/HowItWorks'));
 const Stats = lazy(() => import('./components/Stats'));
 const Products = lazy(() => import('./components/Products'));
 const Solutions = lazy(() => import('./components/Solutions'));
 const Advantages = lazy(() => import('./components/Advantages'));
 const About = lazy(() => import('./components/About'));
 const Contact = lazy(() => import('./components/Contact'));
+const CoolShowcasePage = lazy(() => import('./components/CoolShowcasePage'));
 
 // 加载占位组件
 function LoadingFallback() {
@@ -21,14 +22,27 @@ function LoadingFallback() {
 }
 
 export default function App() {
+  const isCoolPage = window.location.pathname.replace(/\/+$/, '') === '/cool';
+
+  if (isCoolPage) {
+    return (
+      <Suspense fallback={<LoadingFallback />}>
+        <CoolShowcasePage />
+      </Suspense>
+    );
+  }
+
   return (
-    <div className="min-h-screen"><ThemeSwitcher />
+    <div className="min-h-screen">
       <Suspense fallback={<LoadingFallback />}>
         <Navbar />
       </Suspense>
       <main>
         <Suspense fallback={<LoadingFallback />}>
           <Hero />
+        </Suspense>
+        <Suspense fallback={<LoadingFallback />}>
+          <HowItWorks />
         </Suspense>
         <Suspense fallback={<LoadingFallback />}>
           <Stats />
@@ -52,4 +66,3 @@ export default function App() {
     </div>
   );
 }
-
