@@ -3,7 +3,7 @@
 const themes = [
   { key: "A", name: "翡翠绿" },
   { key: "B", name: "暖橙" },
-  { key: "C", name: "琥珀金" },
+  { key: "C", name: "经典蓝" },
 ];
 
 export default function ThemeSwitcher() {
