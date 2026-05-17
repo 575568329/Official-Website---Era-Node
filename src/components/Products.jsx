@@ -9,21 +9,21 @@ const products = [
     title: '小程序商城',
     description: '顾客扫码下单，库存自动扣减，支付物流一站打通',
     details: ['扫码下单，到店自提', '库存实时同步', '支持多种支付方式', '订单状态实时追踪'],
-    gradient: 'from-blue-500 to-indigo-600',
+    gradient: 'from-primary to-primary-light',
   },
   {
     icon: LayoutDashboard,
     title: '门店管理后台',
     description: '订单/库存/员工/数据，一个后台全部搞定',
     details: ['实时订单处理', '智能库存预警', '员工权限管理', '可视化数据报表'],
-    gradient: 'from-violet-500 to-purple-600',
+    gradient: 'from-accent to-primary-light',
   },
   {
     icon: Bot,
     title: 'AI 智能客服',
     description: '自动回答80%常见问题，让老板从客服中解放',
     details: ['7×24小时在线', '多轮对话能力', '自动学习优化', '无感转人工'],
-    gradient: 'from-cyan-500 to-teal-600',
+    gradient: 'from-primary-light to-accent',
   },
 ];
 
@@ -104,3 +104,5 @@ export default function Products() {
     </section>
   );
 }
+
+

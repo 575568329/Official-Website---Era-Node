@@ -47,7 +47,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-6 text-lg text-slate-400 max-w-lg mx-auto lg:mx-0 leading-relaxed"
+              className="mt-6 text-lg text-muted max-w-lg mx-auto lg:mx-0 leading-relaxed"
             >
               行业模板一键启用，智能客服自动应答，数据看板一目了然
             </motion.p>
@@ -117,4 +117,5 @@ export default function Hero() {
     </section>
   );
 }
+
 

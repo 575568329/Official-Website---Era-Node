@@ -12,7 +12,7 @@ const solutions = [
       { title: '库存智能预警', desc: '库存不足自动提醒，保质期到期提前预警' },
       { title: '会员积分自动累积', desc: '消费自动积分，积分抵现，提升复购率' },
     ],
-    mockupColor: 'from-blue-500 to-blue-600',
+    mockupColor: 'from-primary to-primary-light',
     mockupItems: ['蒙牛纯牛奶', '农夫山泉', '乐事薯片', '康师傅'],
   },
   {
@@ -23,7 +23,7 @@ const solutions = [
       { title: '口味自定义', desc: '糖度、冰度、加料自由选择，满足个性需求' },
       { title: '外卖平台一键对接', desc: '美团/饿了么订单同步，统一管理不遗漏' },
     ],
-    mockupColor: 'from-cyan-500 to-teal-500',
+    mockupColor: 'from-primary to-primary-light',
     mockupItems: ['杨枝甘露', '珍珠奶茶', '冰美式', '柠檬茶'],
   },
   {
@@ -34,7 +34,7 @@ const solutions = [
       { title: '后厨接单', desc: '前台下单后厨即时接收，出餐更快更准' },
       { title: '堂食外卖统一管理', desc: '堂食、外卖、自提多渠道订单一站式管理' },
     ],
-    mockupColor: 'from-orange-500 to-red-500',
+    mockupColor: 'from-accent to-primary',
     mockupItems: ['红烧排骨', '宫保鸡丁', '鱼香肉丝', '麻婆豆腐'],
   },
   {
@@ -45,7 +45,7 @@ const solutions = [
       { title: '穿搭推荐', desc: '智能搭配推荐，提升客单价和连带率' },
       { title: '会员复购触达', desc: '新货上架、会员专享自动推送，提升复购' },
     ],
-    mockupColor: 'from-pink-500 to-purple-500',
+    mockupColor: 'from-primary-light to-accent',
     mockupItems: ['春季新款', '运动T恤', '牛仔裤', '连衣裙'],
   },
   {
@@ -56,7 +56,7 @@ const solutions = [
       { title: '保质期预警', desc: '临期商品自动提醒，减少损耗' },
       { title: '社区团购一键发起', desc: '微信社群快速成团，带动社区消费' },
     ],
-    mockupColor: 'from-green-500 to-emerald-500',
+    mockupColor: 'from-accent to-primary-light',
     mockupItems: ['新鲜草莓', '有机蔬菜', '进口牛肉', '鲜活龙虾'],
   },
 ];
@@ -169,3 +169,5 @@ export default function Solutions() {
     </section>
   );
 }
+
+

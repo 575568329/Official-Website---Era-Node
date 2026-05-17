@@ -48,7 +48,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(e) => { e.preventDefault(); handleClick('#contact'); }}
-              className="bg-primary text-white text-sm font-medium px-6 py-2.5 rounded-xl shadow-md hover:bg-blue-700 transition-colors"
+              className="bg-primary text-white text-sm font-medium px-6 py-2.5 rounded-xl shadow-md hover:opacity-90 transition-opacity"
             >
               免费体验
             </a>
@@ -89,7 +89,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={(e) => { e.preventDefault(); handleClick('#contact'); }}
-                className="bg-primary text-white text-center font-medium px-6 py-3 rounded-xl hover:bg-blue-800 transition-colors mt-4"
+                className="bg-primary text-white text-center font-medium px-6 py-3 rounded-xl hover:opacity-90 transition-opacity mt-4"
               >
                 免费体验
               </a>
@@ -100,4 +100,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
 
