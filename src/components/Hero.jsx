@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center bg-dark overflow-hidden pt-16">
       {/* 网格背景 */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: 'linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)',
+        backgroundImage: 'linear-gradient(var(--hero-grid, rgba(255,255,255,.1)) 1px, transparent 1px), linear-gradient(90deg, var(--hero-grid, rgba(255,255,255,.1)) 1px, transparent 1px)',
         backgroundSize: '60px 60px'
       }} />
       
@@ -24,17 +24,17 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/10 mb-8"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-hero-badge border border-hero-badge-border mb-8"
             >
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-sm text-slate-300">专为中小门店打造</span>
+              <span className="text-sm text-hero-badge-text">专为中小门店打造</span>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-hero-title leading-tight"
             >
               开好一家店，
               <br />
@@ -61,7 +61,7 @@ export default function Hero() {
               <a
                 href="#contact"
                 onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }}
-                className="group inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-white text-dark font-semibold rounded-xl hover:bg-slate-100 transition-all shadow-lg shadow-white/10"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-hero-cta text-hero-cta-text font-semibold rounded-xl hover:bg-hero-cta-hover transition-all shadow-lg shadow-hero-cta-shadow"
               >
                 免费体验
                 <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
@@ -69,7 +69,7 @@ export default function Hero() {
               <a
                 href="#products"
                 onClick={(e) => { e.preventDefault(); document.querySelector('#products')?.scrollIntoView({ behavior: 'smooth' }); }}
-                className="inline-flex items-center justify-center px-8 py-3.5 border border-white/20 text-white/90 font-medium rounded-xl hover:bg-white/5 hover:border-white/30 transition-all"
+                className="inline-flex items-center justify-center px-8 py-3.5 border border-hero-outline text-hero-outline-text font-medium rounded-xl hover:bg-hero-outline-hover hover:border-hero-outline-hover-border transition-all"
               >
                 立即了解
               </a>
@@ -104,7 +104,7 @@ export default function Hero() {
         transition={{ delay: 1.2 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
-        <a href="#stats" onClick={(e) => { e.preventDefault(); document.querySelector('#stats')?.scrollIntoView({ behavior: 'smooth' }); }} className="flex flex-col items-center gap-2 text-slate-500 hover:text-slate-300 transition-colors">
+        <a href="#stats" onClick={(e) => { e.preventDefault(); document.querySelector('#stats')?.scrollIntoView({ behavior: 'smooth' }); }} className="flex flex-col items-center gap-2 text-hero-scroll hover:text-hero-scroll-hover transition-colors">
           <span className="text-xs tracking-wider">向下滚动</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}

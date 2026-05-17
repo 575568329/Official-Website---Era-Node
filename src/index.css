@@ -8,6 +8,20 @@
   --color-primary-light: var(--primary-light);
   --color-accent: var(--accent);
   --color-dark: var(--dark);
+  --color-hero-title: var(--hero-title, #1c1917);
+  --color-hero-badge: var(--hero-badge, rgba(255,255,255,0.1));
+  --color-hero-badge-border: var(--hero-badge-border, rgba(255,255,255,0.1));
+  --color-hero-badge-text: var(--hero-badge-text, #cbd5e1);
+  --color-hero-cta: var(--hero-cta, #ffffff);
+  --color-hero-cta-text: var(--hero-cta-text, #022c22);
+  --color-hero-cta-hover: var(--hero-cta-hover, #f1f5f9);
+  --color-hero-cta-shadow: var(--hero-cta-shadow, rgba(255,255,255,0.1));
+  --color-hero-outline: var(--hero-outline, rgba(255,255,255,0.2));
+  --color-hero-outline-text: var(--hero-outline-text, rgba(255,255,255,0.9));
+  --color-hero-outline-hover: var(--hero-outline-hover, rgba(255,255,255,0.05));
+  --color-hero-outline-hover-border: var(--hero-outline-hover-border, rgba(255,255,255,0.3));
+  --color-hero-scroll: var(--hero-scroll, #64748b);
+  --color-hero-scroll-hover: var(--hero-scroll-hover, #cbd5e1);
   --color-body: #1E293B;
   --color-muted: #64748B;
   --color-light: #94A3B8;
@@ -29,6 +43,21 @@
   --hero-glow-1: rgba(5, 150, 105, 0.25);
   --hero-glow-2: rgba(251, 191, 36, 0.15);
   --hero-glow-3: rgba(52, 211, 153, 0.10);
+      --hero-title: #ffffff;
+      --hero-badge: rgba(255,255,255,0.1);
+      --hero-badge-border: rgba(255,255,255,0.1);
+      --hero-badge-text: #cbd5e1;
+      --hero-cta: #ffffff;
+      --hero-cta-text: #022c22;
+      --hero-cta-hover: #f1f5f9;
+      --hero-cta-shadow: rgba(255,255,255,0.1);
+      --hero-outline: rgba(255,255,255,0.2);
+      --hero-outline-text: rgba(255,255,255,0.9);
+      --hero-outline-hover: rgba(255,255,255,0.05);
+      --hero-outline-hover-border: rgba(255,255,255,0.3);
+      --hero-scroll: #64748b;
+      --hero-scroll-hover: #cbd5e1;
+      --hero-grid: rgba(255,255,255,0.1);
 }
 
 /* ===== 方案B: 暖橙 ===== */
@@ -36,12 +65,27 @@
   --primary: #EA580C;
   --primary-light: #FB923C;
   --accent: #14B8A6;
-  --dark: #292524;
+  --dark: #FFF7ED;
   --logo-from: #EA580C;
   --logo-to: #FB923C;
   --hero-glow-1: rgba(234, 88, 12, 0.25);
   --hero-glow-2: rgba(20, 184, 166, 0.15);
   --hero-glow-3: rgba(251, 146, 60, 0.10);
+      --hero-title: #1c1917;
+      --hero-badge: rgba(234,88,12,0.08);
+      --hero-badge-border: rgba(234,88,12,0.15);
+      --hero-badge-text: #92400e;
+      --hero-cta: #ea580c;
+      --hero-cta-text: #ffffff;
+      --hero-cta-hover: #c2410c;
+      --hero-cta-shadow: rgba(234,88,12,0.2);
+      --hero-outline: rgba(28,25,23,0.15);
+      --hero-outline-text: #44403c;
+      --hero-outline-hover: rgba(234,88,12,0.05);
+      --hero-outline-hover-border: rgba(234,88,12,0.3);
+      --hero-scroll: #a8a29e;
+      --hero-scroll-hover: #57534e;
+      --hero-grid: rgba(0,0,0,0.06);
 }
 
 /* ===== 方案C: 琥珀金 ===== */
@@ -49,12 +93,27 @@
   --primary: #B45309;
   --primary-light: #F59E0B;
   --accent: #10B981;
-  --dark: #292524;
+  --dark: #FFFBEB;
   --logo-from: #B45309;
   --logo-to: #F59E0B;
   --hero-glow-1: rgba(180, 83, 9, 0.25);
   --hero-glow-2: rgba(16, 185, 129, 0.15);
   --hero-glow-3: rgba(245, 158, 11, 0.10);
+      --hero-title: #1c1917;
+      --hero-badge: rgba(180,83,9,0.08);
+      --hero-badge-border: rgba(180,83,9,0.15);
+      --hero-badge-text: #78350f;
+      --hero-cta: #b45309;
+      --hero-cta-text: #ffffff;
+      --hero-cta-hover: #92400e;
+      --hero-cta-shadow: rgba(180,83,9,0.2);
+      --hero-outline: rgba(28,25,23,0.15);
+      --hero-outline-text: #44403c;
+      --hero-outline-hover: rgba(180,83,9,0.05);
+      --hero-outline-hover-border: rgba(180,83,9,0.3);
+      --hero-scroll: #a8a29e;
+      --hero-scroll-hover: #57534e;
+      --hero-grid: rgba(0,0,0,0.06);
 }
 
 /* 全局样式 */
