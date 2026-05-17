@@ -1,27 +1,27 @@
-﻿import { motion } from 'motion/react';
-import { Zap, Target, Brain, Users } from 'lucide-react';
+import { motion } from 'motion/react';
+import { UserCheck, Smartphone, RefreshCw, LifeBuoy } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 
-const advantages = [
+const guarantees = [
   {
-    icon: Zap,
-    title: '极速上线',
-    description: '3分钟搭建线上门店，不用懂技术，不用请人做',
+    icon: UserCheck,
+    title: '上线陪跑',
+    description: '从模板选择到商品配置，提供一对一协助，不把复杂问题丢给老板。',
   },
   {
-    icon: Target,
-    title: '一套系统多行业',
-    description: '5大行业模板预置，选你的行业一键启用，告别从零开始',
+    icon: Smartphone,
+    title: '操作简单',
+    description: '老板和店员都能在手机上完成日常操作，不用学复杂系统。',
   },
   {
-    icon: Brain,
-    title: 'AI 赋能运营',
-    description: '24小时AI客服值守，夜间也不漏掉任何一笔生意',
+    icon: RefreshCw,
+    title: '持续优化',
+    description: '根据门店反馈持续迭代功能和行业模板，工具跟着你的生意一起变好。',
   },
   {
-    icon: Users,
-    title: '极简管理',
-    description: '老板在手机上就能看每天赚多少、亏在哪',
+    icon: LifeBuoy,
+    title: '售后响应',
+    description: '遇到问题有人接，不用在论坛找答案，不用等工单排队。',
   },
 ];
 
@@ -30,19 +30,21 @@ export default function Advantages() {
 
   return (
     <section id="advantages" ref={ref} className="py-20 md:py-28 bg-bg-secondary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
           className="text-center mb-14"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">为什么选择时代节点</h2>
-          <p className="mt-3 text-muted">不堆砌功能，只做真正有用的</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+            不只是工具，也有人陪你跑起来
+          </h2>
+          <p className="mt-3 text-muted">从上线到运营，全程有人支持</p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {advantages.map((item, index) => {
+          {guarantees.map((item, index) => {
             const Icon = item.icon;
             return (
               <motion.div
@@ -50,7 +52,7 @@ export default function Advantages() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-2xl p-7 lg:p-8 hover:shadow-lg transition-all duration-300 group border border-border/50 hover:border-border"
+                className="bg-white rounded-2xl p-7 lg:p-8 hover:shadow-lg transition-all duration-300 group border border-border/30 hover:border-primary/20"
               >
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 transition-all duration-300 group-hover:bg-primary group-hover:shadow-lg group-hover:shadow-primary/20">
                   <Icon size={22} className="text-primary transition-colors duration-300 group-hover:text-white" />

@@ -34,7 +34,7 @@
 }
 
 /* ===== 方案A: 翡翠绿 ===== */
-:root, [data-theme="A"] {
+[data-theme="A"] {
   --primary: #059669;
   --primary-light: #34D399;
   --accent: #FBBF24;
@@ -67,8 +67,8 @@
       --hero-grid: rgba(255,255,255,0.1);
 }
 
-/* ===== 方案B: 暖橙 ===== */
-[data-theme="B"] {
+/* ===== 方案B: 暖橙（默认） ===== */
+:root, [data-theme="B"] {
   --primary: #EA580C;
   --primary-light: #FB923C;
   --accent: #14B8A6;
@@ -158,4 +158,71 @@ html {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #64748b;
+}
+
+.cool-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(circle at 50% 30%, black 0%, transparent 72%);
+}
+
+.cool-float {
+  animation: cool-float 7s ease-in-out infinite;
+}
+
+.cool-scan {
+  animation: cool-scan 4.5s ease-in-out infinite;
+}
+
+.cool-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.cool-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%);
+  background: linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, 0.45), transparent 65%);
+  animation: cool-shimmer 3s ease-in-out infinite;
+}
+
+@keyframes cool-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes cool-scan {
+  0%, 100% {
+    transform: translateY(-40%);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(260%);
+    opacity: 0.55;
+  }
+}
+
+@keyframes cool-shimmer {
+  0%, 45% {
+    transform: translateX(-120%);
+  }
+  75%, 100% {
+    transform: translateX(120%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cool-float,
+  .cool-scan,
+  .cool-shimmer::after {
+    animation: none;
+  }
 }

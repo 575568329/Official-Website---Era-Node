@@ -1,13 +1,13 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
 
 const menuItems = [
-  { label: '产品', href: '#products' },
-  { label: '解决方案', href: '#solutions' },
-  { label: '优势', href: '#advantages' },
-  { label: '关于', href: '#about' },
+  { label: '怎么开始', href: '#how-it-works' },
+  { label: '产品能力', href: '#products' },
+  { label: '适用行业', href: '#solutions' },
+  { label: '服务保障', href: '#advantages' },
   { label: '联系我们', href: '#contact' },
 ];
 
@@ -63,7 +63,7 @@ export default function Navbar() {
               onClick={(e) => { e.preventDefault(); handleClick('#contact'); }}
               className="bg-primary text-white text-sm font-medium px-6 py-2.5 rounded-xl shadow-md hover:opacity-90 transition-opacity"
             >
-              免费体验
+              预约免费演示
             </a>
           </div>
 
@@ -103,7 +103,7 @@ export default function Navbar() {
                 onClick={(e) => { e.preventDefault(); handleClick('#contact'); }}
                 className="bg-primary text-white text-center font-medium px-6 py-3 rounded-xl hover:opacity-90 transition-opacity mt-4"
               >
-                免费体验
+                预约免费演示
               </a>
             </div>
           </motion.div>

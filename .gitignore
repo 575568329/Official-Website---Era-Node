@@ -25,3 +25,9 @@ dist-ssr
 
 # 旧文件备份
 _old/
+
+# Claude Code
+.claude/
+
+# 文档
+docs/
