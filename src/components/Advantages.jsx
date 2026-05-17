@@ -8,28 +8,24 @@ const advantages = [
     title: '极速上线',
     description: '选模板→上商品→开店，不需要会代码，不需要懂技术',
     gradient: 'from-primary to-primary-light',
-    bg: 'bg-amber-50',
   },
   {
     icon: Target,
     title: '一套系统多行业',
     description: '5大行业模板预置500+常见商品，选你的行业，一键启用',
     gradient: 'from-accent to-primary-light',
-    bg: 'bg-accent/5',
   },
   {
     icon: Brain,
     title: 'AI 赋能运营',
     description: '智能客服降低80%人工客服量，数据分析告诉你什么好卖',
     gradient: 'from-primary to-accent',
-    bg: 'bg-violet-50',
   },
   {
     icon: Users,
     title: '极简管理',
     description: '老板看得懂的经营数据、店员用得会的操作界面',
     gradient: 'from-primary-light to-accent',
-    bg: 'bg-emerald-50',
   },
 ];
 
@@ -73,5 +69,3 @@ export default function Advantages() {
     </section>
   );
 }
-
-

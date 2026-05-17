@@ -5,11 +5,11 @@
       <stop offset="100%" style="stop-color:#EFF6FF;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="aboutBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#64748B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#94A3B8;stop-opacity:1" />
     </linearGradient>
     <filter id="aboutShadow" x="-10%" y="-10%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4F46E5" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#64748B" flood-opacity="0.12"/>
     </filter>
     <filter id="aboutSoft" x="-10%" y="-10%" width="130%" height="130%">
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.06"/>
@@ -20,42 +20,42 @@
   <rect width="500" height="350" rx="16" fill="url(#aboutBgGrad)"/>
 
   <!-- Decorative elements -->
-  <circle cx="420" cy="50" r="40" fill="#4F46E5" opacity="0.04"/>
-  <circle cx="60" cy="300" r="50" fill="#06B6D4" opacity="0.04"/>
+  <circle cx="420" cy="50" r="40" fill="#64748B" opacity="0.04"/>
+  <circle cx="60" cy="300" r="50" fill="#10B981" opacity="0.04"/>
 
   <!-- Timeline / Growth path -->
   <path d="M80 200 Q150 140 250 180 Q350 220 420 150" stroke="url(#aboutBlueGrad)" stroke-width="2.5" stroke-dasharray="8 6" fill="none" opacity="0.3"/>
 
   <!-- Milestone dots on path -->
-  <circle cx="80" cy="200" r="6" fill="white" stroke="#4F46E5" stroke-width="2.5"/>
-  <circle cx="80" cy="200" r="2.5" fill="#4F46E5"/>
-  <circle cx="250" cy="180" r="6" fill="white" stroke="#4F46E5" stroke-width="2.5"/>
-  <circle cx="250" cy="180" r="2.5" fill="#4F46E5"/>
-  <circle cx="420" cy="150" r="6" fill="white" stroke="#4F46E5" stroke-width="2.5"/>
-  <circle cx="420" cy="150" r="2.5" fill="#4F46E5"/>
+  <circle cx="80" cy="200" r="6" fill="white" stroke="#64748B" stroke-width="2.5"/>
+  <circle cx="80" cy="200" r="2.5" fill="#64748B"/>
+  <circle cx="250" cy="180" r="6" fill="white" stroke="#64748B" stroke-width="2.5"/>
+  <circle cx="250" cy="180" r="2.5" fill="#64748B"/>
+  <circle cx="420" cy="150" r="6" fill="white" stroke="#64748B" stroke-width="2.5"/>
+  <circle cx="420" cy="150" r="2.5" fill="#64748B"/>
 
   <!-- Year labels -->
-  <text x="80" y="230" text-anchor="middle" fill="#4F46E5" font-size="11" font-family="sans-serif" font-weight="600">2020</text>
+  <text x="80" y="230" text-anchor="middle" fill="#64748B" font-size="11" font-family="sans-serif" font-weight="600">2020</text>
   <text x="80" y="244" text-anchor="middle" fill="#6B7280" font-size="9" font-family="sans-serif">成立</text>
 
-  <text x="250" y="210" text-anchor="middle" fill="#4F46E5" font-size="11" font-family="sans-serif" font-weight="600">2023</text>
+  <text x="250" y="210" text-anchor="middle" fill="#64748B" font-size="11" font-family="sans-serif" font-weight="600">2023</text>
   <text x="250" y="224" text-anchor="middle" fill="#6B7280" font-size="9" font-family="sans-serif">产品升级</text>
 
-  <text x="420" y="180" text-anchor="middle" fill="#4F46E5" font-size="11" font-family="sans-serif" font-weight="600">2025</text>
+  <text x="420" y="180" text-anchor="middle" fill="#64748B" font-size="11" font-family="sans-serif" font-weight="600">2025</text>
   <text x="420" y="194" text-anchor="middle" fill="#6B7280" font-size="9" font-family="sans-serif">AI 赋能</text>
 
   <!-- Team card 1 -->
   <g transform="translate(40, 40)" filter="url(#aboutSoft)">
     <rect width="130" height="110" rx="10" fill="white"/>
-    <circle cx="35" cy="40" r="18" fill="#EEF2FF"/>
-    <circle cx="35" cy="35" r="7" fill="#4F46E5" opacity="0.6"/>
-    <path d="M25 50 Q35 44 45 50" stroke="#4F46E5" stroke-width="2" fill="none" opacity="0.6"/>
+    <circle cx="35" cy="40" r="18" fill="#ECFDF5"/>
+    <circle cx="35" cy="35" r="7" fill="#64748B" opacity="0.6"/>
+    <path d="M25 50 Q35 44 45 50" stroke="#64748B" stroke-width="2" fill="none" opacity="0.6"/>
     <text x="65" y="38" fill="#1F2937" font-size="11" font-family="sans-serif" font-weight="600">技术研发</text>
     <text x="65" y="52" fill="#6B7280" font-size="9" font-family="sans-serif">核心团队</text>
     <line x1="15" y1="68" x2="115" y2="68" stroke="#E5E7EB" stroke-width="1"/>
-    <text x="15" y="85" fill="#4F46E5" font-size="18" font-family="sans-serif" font-weight="700">30+</text>
+    <text x="15" y="85" fill="#64748B" font-size="18" font-family="sans-serif" font-weight="700">30+</text>
     <text x="55" y="85" fill="#6B7280" font-size="9" font-family="sans-serif">工程师</text>
-    <text x="15" y="100" fill="#06B6D4" font-size="18" font-family="sans-serif" font-weight="700">5年+</text>
+    <text x="15" y="100" fill="#10B981" font-size="18" font-family="sans-serif" font-weight="700">5年+</text>
     <text x="58" y="100" fill="#6B7280" font-size="9" font-family="sans-serif">行业经验</text>
   </g>
 
@@ -84,8 +84,8 @@
   <g transform="translate(70, 268)">
     <rect width="360" height="55" rx="12" fill="white" filter="url(#aboutSoft)"/>
     <g transform="translate(20, 16)">
-      <circle cx="10" cy="12" r="8" fill="#EEF2FF"/>
-      <text x="10" y="16" text-anchor="middle" fill="#4F46E5" font-size="10">🛡️</text>
+      <circle cx="10" cy="12" r="8" fill="#ECFDF5"/>
+      <text x="10" y="16" text-anchor="middle" fill="#64748B" font-size="10">🛡️</text>
       <text x="28" y="16" fill="#374151" font-size="10" font-family="sans-serif" font-weight="500">数据安全</text>
     </g>
     <g transform="translate(105, 16)">

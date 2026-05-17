@@ -1,13 +1,13 @@
 ﻿import { useState, useEffect } from "react";
 
 const themes = [
-  { key: "A", name: "暖橙" },
-  { key: "B", name: "翠绿" },
-  { key: "C", name: "靛青" },
+  { key: "A", name: "翡翠绿" },
+  { key: "B", name: "暖橙" },
+  { key: "C", name: "琥珀金" },
 ];
 
 export default function ThemeSwitcher() {
-  const [active, setActive] = useState(() => localStorage.getItem("theme") || "A");
+  const [active, setActive] = useState(() => localStorage.getItem("theme") || "B");
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", active);
     localStorage.setItem("theme", active);
@@ -29,4 +29,3 @@ export default function ThemeSwitcher() {
     </div>
   );
 }
-

@@ -11,6 +11,15 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="时代节点" />
     <title>时代节点 - 开好一家店，不需要那么累</title>
+    <script>
+      // Support ?theme=A/B/C for preview — also set localStorage to prevent React override
+      const params = new URLSearchParams(location.search);
+      const theme = params.get('theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -10,10 +10,10 @@ export default function Hero() {
         backgroundSize: '60px 60px'
       }} />
       
-      {/* 渐变光晕 */}
-      <div className="absolute top-1/4 left-1/6 w-[500px] h-[500px] bg-primary/25 rounded-full blur-[120px]" />
-      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent/20 rounded-full blur-[100px]" />
-      <div className="absolute top-1/2 right-1/3 w-[300px] h-[300px] bg-primary-light/10 rounded-full blur-[80px]" />
+      {/* 渐变光晕 - 使用CSS变量 */}
+      <div className="absolute top-1/4 left-1/6 w-[500px] h-[500px] rounded-full blur-[120px]" style={{ background: 'var(--hero-glow-1)' }} />
+      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full blur-[100px]" style={{ background: 'var(--hero-glow-2)' }} />
+      <div className="absolute top-1/2 right-1/3 w-[300px] h-[300px] rounded-full blur-[80px]" style={{ background: 'var(--hero-glow-3)' }} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -117,5 +117,3 @@ export default function Hero() {
     </section>
   );
 }
-
-

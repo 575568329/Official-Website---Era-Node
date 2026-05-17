@@ -3,7 +3,6 @@
 
 /* ===== 时代节点官网配色系统 ===== */
 
-/* 默认主题（暖橙） */
 @theme {
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
@@ -18,34 +17,44 @@
   --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
-/* 方案A: 活力暖橙 */
+/* ===== 方案A: 翡翠绿 ===== */
 :root, [data-theme="A"] {
-  --primary: #E8590C;
-  --primary-light: #FB923C;
-  --accent: #0891B2;
-  --dark: #1A1A2E;
-  --logo-from: #E8590C;
-  --logo-to: #FB923C;
-}
-
-/* 方案B: 翠绿清新 */
-[data-theme="B"] {
   --primary: #059669;
   --primary-light: #34D399;
-  --accent: #F59E0B;
-  --dark: #0F172A;
+  --accent: #FBBF24;
+  --dark: #022C22;
   --logo-from: #059669;
   --logo-to: #34D399;
+  /* Hero光晕 */
+  --hero-glow-1: rgba(5, 150, 105, 0.25);
+  --hero-glow-2: rgba(251, 191, 36, 0.15);
+  --hero-glow-3: rgba(52, 211, 153, 0.10);
 }
 
-/* 方案C: 现代靛青 */
+/* ===== 方案B: 暖橙 ===== */
+[data-theme="B"] {
+  --primary: #EA580C;
+  --primary-light: #FB923C;
+  --accent: #14B8A6;
+  --dark: #1C1917;
+  --logo-from: #EA580C;
+  --logo-to: #FB923C;
+  --hero-glow-1: rgba(234, 88, 12, 0.25);
+  --hero-glow-2: rgba(20, 184, 166, 0.15);
+  --hero-glow-3: rgba(251, 146, 60, 0.10);
+}
+
+/* ===== 方案C: 琥珀金 ===== */
 [data-theme="C"] {
-  --primary: #0D9488;
-  --primary-light: #2DD4BF;
-  --accent: #F97316;
-  --dark: #18181B;
-  --logo-from: #0D9488;
-  --logo-to: #2DD4BF;
+  --primary: #B45309;
+  --primary-light: #F59E0B;
+  --accent: #10B981;
+  --dark: #1C1917;
+  --logo-from: #B45309;
+  --logo-to: #F59E0B;
+  --hero-glow-1: rgba(180, 83, 9, 0.25);
+  --hero-glow-2: rgba(16, 185, 129, 0.15);
+  --hero-glow-3: rgba(245, 158, 11, 0.10);
 }
 
 /* 全局样式 */
@@ -57,12 +66,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 平滑滚动 */
 html {
   scroll-behavior: smooth;
 }
 
-/* 滚动条 */
 ::-webkit-scrollbar {
   width: 6px;
 }
