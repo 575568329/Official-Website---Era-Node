@@ -150,19 +150,16 @@ function CoolNav() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-stone-950/55 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="/" className="[&_span]:text-white">
+        <a href="#top" className="[&_span]:text-white">
           <Logo />
         </a>
         <nav className="hidden items-center gap-7 text-sm text-stone-300 md:flex">
           <a href="#story" className="transition-colors hover:text-white">经营路径</a>
-          <a href="#industries" className="transition-colors hover:text-white">行业适配</a>
-          <a href="#contact-cool" className="transition-colors hover:text-white">预约演示</a>
+          <a href="#industries" className="transition-colors hover:text-white">适用门店</a>
+          <a href="#relief" className="transition-colors hover:text-white">经营减负</a>
         </nav>
-        <a
-          href="/"
-          className="rounded-full border border-white/15 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10"
-        >
-          返回稳健版
+        <a href="#contact-cool" className="rounded-full bg-orange-400 px-4 py-2 text-sm font-semibold text-stone-950 transition-transform hover:-translate-y-0.5">
+          预约演示
         </a>
       </div>
     </header>
@@ -182,18 +179,17 @@ export default function CoolShowcasePage() {
       <CoolNav />
 
       <main>
-        <section className="relative min-h-screen px-4 pt-28 sm:px-6 lg:px-8">
+        <section id="top" className="relative flex min-h-screen items-center px-4 py-24 sm:px-6 lg:px-8">
           <div className="cool-grid absolute inset-0 opacity-45" />
           <div className="absolute left-[-10%] top-24 h-80 w-80 rounded-full bg-orange-500/30 blur-[120px]" />
           <div className="absolute bottom-0 right-[-8%] h-96 w-96 rounded-full bg-teal-400/20 blur-[130px]" />
           <div className="absolute left-1/2 top-1/3 h-48 w-48 rounded-full bg-amber-300/15 blur-[90px]" />
 
-          <div className="relative mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-[.95fr_1.05fr]">
+          <div className="relative mx-auto grid w-full max-w-7xl items-center gap-16 lg:grid-cols-[.95fr_1.05fr]">
             <motion.div
               initial={{ opacity: 0, y: 28 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="pt-10"
             >
               <div className="inline-flex items-center gap-2 rounded-full border border-orange-200/15 bg-orange-200/10 px-4 py-2 text-sm text-orange-100">
                 <Sparkles size={16} />
@@ -303,7 +299,7 @@ export default function CoolShowcasePage() {
           </div>
         </section>
 
-        <section className="relative px-4 py-24 sm:px-6 lg:px-8">
+        <section id="relief" className="relative px-4 py-24 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 max-w-3xl">
               <div className="text-sm font-semibold uppercase tracking-[0.35em] text-orange-300">Why EraNode</div>
