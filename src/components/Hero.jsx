@@ -49,7 +49,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-6 text-lg text-muted max-w-lg mx-auto lg:mx-0 leading-relaxed"
             >
-              行业模板一键启用，智能客服自动应答，数据看板一目了然
+              3分钟搭建线上门店 · 24小时AI客服值守 · 手机实时掌握每日利润
             </motion.p>
 
             <motion.div

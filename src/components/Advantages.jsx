@@ -6,22 +6,22 @@ const advantages = [
   {
     icon: Zap,
     title: '极速上线',
-    description: '选模板→上商品→开店，不需要会代码，不需要懂技术',
+    description: '3分钟搭建线上门店，不用懂技术，不用请人做',
   },
   {
     icon: Target,
     title: '一套系统多行业',
-    description: '5大行业模板预置500+常见商品，选你的行业，一键启用',
+    description: '5大行业模板预置，选你的行业一键启用，告别从零开始',
   },
   {
     icon: Brain,
     title: 'AI 赋能运营',
-    description: '智能客服降低80%人工客服量，数据分析告诉你什么好卖',
+    description: '24小时AI客服值守，夜间也不漏掉任何一笔生意',
   },
   {
     icon: Users,
     title: '极简管理',
-    description: '老板看得懂的经营数据、店员用得会的操作界面',
+    description: '老板在手机上就能看每天赚多少、亏在哪',
   },
 ];
 

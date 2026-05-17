@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useInView } from '../hooks/useInView';
 
-function AnimatedNumber({ target, suffix = '', duration = 2000 }) {
+function AnimatedNumber({ target, suffix = '', prefix = '', duration = 2000 }) {
   const [count, setCount] = useState(0);
   const hasAnimated = useRef(false);
   const localRef = useRef(null);
@@ -29,15 +29,15 @@ function AnimatedNumber({ target, suffix = '', duration = 2000 }) {
     );
     observer.observe(element);
     return () => observer.disconnect();
-  }, [target, suffix, duration]);
+  }, [target, suffix, prefix, duration]);
 
-  return <span ref={localRef}>{count}{suffix}</span>;
+  return <span ref={localRef}>{prefix}{count}{suffix}</span>;
 }
 
 const stats = [
-  { value: 5, suffix: '+', label: '行业模板', description: '便利店/茶饮/餐饮/服装/生鲜', icon: '行业' },
-  { value: 30, suffix: 'min', label: '极速上线', description: '从选模板到正式运营', icon: '速度' },
-  { value: 7, suffix: '×24', label: '全天候支持', description: '技术响应，售后无忧', icon: '保障' },
+  { value: 10000, suffix: '+', label: '门店信赖', description: '遍布全国的中小门店正在使用' },
+  { value: 60, suffix: '%', label: '运营提效', description: '平均节省日常运营时间' },
+  { value: 7, suffix: '×24', label: '实时响应', description: '全天候技术支持，售后无忧' },
 ];
 
 export default function Stats() {
@@ -45,7 +45,6 @@ export default function Stats() {
 
   return (
     <section id="stats" ref={ref} className="relative py-20 md:py-28 bg-white">
-      {/* 顶部渐变线 */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,7 +57,7 @@ export default function Stats() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className={'text-center py-8 md:py-0 md:px-8 ' + (index < 2 ? 'md:border-r md:border-border' : '')}
             >
-              <div className="text-5xl md:text-6xl font-bold text-primary font-bold">
+              <div className="text-5xl md:text-6xl font-bold text-primary">
                 <AnimatedNumber target={stat.value} suffix={stat.suffix} />
               </div>
               <div className="mt-3 text-lg font-semibold text-slate-800">{stat.label}</div>
@@ -68,9 +67,7 @@ export default function Stats() {
         </div>
       </div>
 
-      {/* 底部渐变线 */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-24 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
     </section>
   );
 }
-

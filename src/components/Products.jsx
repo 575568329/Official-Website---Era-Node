@@ -7,23 +7,26 @@ const products = [
   {
     icon: ShoppingCart,
     title: '小程序商城',
-    description: '顾客扫码下单，库存自动扣减，支付物流一站打通',
+    subtitle: '让顾客随时随地都能买',
+    description: '3分钟搭建专属门店，扫码下单、到店自提、外卖配送一站打通',
     details: ['扫码下单，到店自提', '库存实时同步', '支持多种支付方式', '订单状态实时追踪'],
-    gradient: 'from-primary to-primary-light',
+    mockup: '🛒',
   },
   {
     icon: LayoutDashboard,
     title: '门店管理后台',
-    description: '订单/库存/员工/数据，一个后台全部搞定',
+    subtitle: '一个后台管全部',
+    description: '订单、库存、员工、利润，手机上实时掌握经营全貌',
     details: ['实时订单处理', '智能库存预警', '员工权限管理', '可视化数据报表'],
-    gradient: 'from-accent to-primary-light',
+    mockup: '📊',
   },
   {
     icon: Bot,
     title: 'AI 智能客服',
-    description: '自动回答80%常见问题，让老板从客服中解放',
+    subtitle: '24小时替你接单',
+    description: '自动回答80%常见问题，夜间也不漏掉任何一笔生意',
     details: ['7×24小时在线', '多轮对话能力', '自动学习优化', '无感转人工'],
-    gradient: 'from-primary-light to-accent',
+    mockup: '🤖',
   },
 ];
 
@@ -56,14 +59,17 @@ export default function Products() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group"
               >
-                {/* 顶部渐变条 */}
-                <div className={'h-1 bg-gradient-to-r ' + product.gradient} />
-                <div className="p-7 lg:p-8">
-                  <div className={'w-13 h-13 rounded-2xl bg-gradient-to-br ' + product.gradient + ' flex items-center justify-center mb-5 shadow-lg shadow-slate-200'}>
-                    <Icon size={24} className="text-white" />
+                {/* Product mockup area */}
+                <div className="h-40 bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
+                    <Icon size={28} className="text-primary transition-colors duration-300 group-hover:text-white" />
                   </div>
+                </div>
+
+                <div className="p-7 lg:p-8">
                   <h3 className="text-xl font-bold text-slate-900">{product.title}</h3>
-                  <p className="mt-2.5 text-muted text-sm leading-relaxed">{product.description}</p>
+                  <p className="mt-1 text-sm font-medium text-primary">{product.subtitle}</p>
+                  <p className="mt-2 text-muted text-sm leading-relaxed">{product.description}</p>
                   
                   <button
                     onClick={() => setExpanded(isExpanded ? null : index)}
@@ -87,7 +93,7 @@ export default function Products() {
                         <ul className="mt-4 space-y-2.5 border-t border-border pt-4">
                           {product.details.map((detail) => (
                             <li key={detail} className="flex items-center gap-2.5 text-sm text-slate-600">
-                              <div className={'w-1.5 h-1.5 rounded-full bg-gradient-to-r ' + product.gradient + ' flex-shrink-0'} />
+                              <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                               {detail}
                             </li>
                           ))}
@@ -104,5 +110,3 @@ export default function Products() {
     </section>
   );
 }
-
-
