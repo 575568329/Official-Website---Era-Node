@@ -1,0 +1,126 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8f0fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34D399;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#4F46E5" flood-opacity="0.15"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="500" cy="80" r="60" fill="#4F46E5" opacity="0.06"/>
+  <circle cx="520" cy="100" r="40" fill="#7C3AED" opacity="0.08"/>
+  <circle cx="80" cy="320" r="80" fill="#06B6D4" opacity="0.05"/>
+
+  <!-- Floating dots pattern -->
+  <circle cx="150" cy="60" r="3" fill="#4F46E5" opacity="0.3"/>
+  <circle cx="180" cy="90" r="2" fill="#4F46E5" opacity="0.2"/>
+  <circle cx="450" cy="300" r="3" fill="#06B6D4" opacity="0.3"/>
+  <circle cx="480" cy="280" r="2" fill="#06B6D4" opacity="0.2"/>
+  <circle cx="520" cy="320" r="2.5" fill="#7C3AED" opacity="0.25"/>
+  <circle cx="100" cy="150" r="2" fill="#10B981" opacity="0.3"/>
+
+  <!-- Central dashboard card -->
+  <rect x="120" y="80" width="240" height="160" rx="12" fill="white" filter="url(#shadow)"/>
+  <!-- Dashboard header -->
+  <rect x="120" y="80" width="240" height="40" rx="12" fill="url(#blueGrad)"/>
+  <rect x="120" y="108" width="240" height="12" fill="url(#blueGrad)"/>
+  <!-- Window dots -->
+  <circle cx="142" cy="100" r="5" fill="white" opacity="0.4"/>
+  <circle cx="158" cy="100" r="5" fill="white" opacity="0.4"/>
+  <circle cx="174" cy="100" r="5" fill="white" opacity="0.4"/>
+  <!-- Chart lines in dashboard -->
+  <polyline points="148,170 180,150 210,165 240,140 270,155 300,130 330,145" stroke="url(#cyanGrad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="148,190 180,185 210,195 240,180 270,190 300,175 330,182" stroke="url(#greenGrad)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <!-- Data bars -->
+  <rect x="148" y="210" width="20" height="16" rx="2" fill="url(#blueGrad)" opacity="0.7"/>
+  <rect x="175" y="204" width="20" height="22" rx="2" fill="url(#blueGrad)" opacity="0.85"/>
+  <rect x="202" y="196" width="20" height="30" rx="2" fill="url(#blueGrad)"/>
+  <rect x="229" y="200" width="20" height="26" rx="2" fill="url(#blueGrad)" opacity="0.8"/>
+  <rect x="256" y="192" width="20" height="34" rx="2" fill="url(#blueGrad)"/>
+
+  <!-- Floating phone mockup (right side) -->
+  <g transform="translate(420, 100) rotate(6)" filter="url(#softShadow)">
+    <rect width="120" height="210" rx="14" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+    <rect x="8" y="28" width="104" height="174" rx="4" fill="#F8FAFC"/>
+    <!-- Phone header -->
+    <rect x="8" y="28" width="104" height="32" rx="4" fill="url(#blueGrad)" opacity="0.9"/>
+    <text x="60" y="48" text-anchor="middle" fill="white" font-size="11" font-family="sans-serif" font-weight="600">时代节点</text>
+    <!-- Product grid -->
+    <rect x="14" y="68" width="42" height="42" rx="6" fill="#EEF2FF"/>
+    <text x="35" y="93" text-anchor="middle" fill="#4F46E5" font-size="16">🛒</text>
+    <rect x="62" y="68" width="42" height="42" rx="6" fill="#ECFDF5"/>
+    <text x="83" y="93" text-anchor="middle" fill="#10B981" font-size="16">📊</text>
+    <rect x="14" y="116" width="42" height="42" rx="6" fill="#FFF7ED"/>
+    <text x="35" y="141" text-anchor="middle" fill="#F59E0B" font-size="16">🤖</text>
+    <rect x="62" y="116" width="42" height="42" rx="6" fill="#FDF2F8"/>
+    <text x="83" y="141" text-anchor="middle" fill="#EC4899" font-size="16">⚡</text>
+    <!-- CTA button -->
+    <rect x="14" y="168" width="90" height="28" rx="6" fill="url(#blueGrad)"/>
+    <text x="59" y="186" text-anchor="middle" fill="white" font-size="10" font-family="sans-serif">免费试用</text>
+  </g>
+
+  <!-- Connection lines (data flow) -->
+  <path d="M360 160 Q390 150 410 160" stroke="#4F46E5" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.4"/>
+  <path d="M360 200 Q385 220 410 210" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.4"/>
+
+  <!-- Store icon (bottom left) -->
+  <g transform="translate(80, 260)" filter="url(#softShadow)">
+    <rect width="100" height="80" rx="10" fill="white"/>
+    <path d="M10 30 L15 14 H85 L90 30" stroke="#4F46E5" stroke-width="2" fill="none"/>
+    <rect x="22" y="36" width="16" height="20" rx="2" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1"/>
+    <rect x="42" y="36" width="16" height="20" rx="2" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1"/>
+    <rect x="62" y="36" width="16" height="20" rx="2" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1"/>
+    <rect x="22" y="60" width="16" height="8" rx="1" fill="#4F46E5" opacity="0.3"/>
+    <rect x="42" y="60" width="16" height="8" rx="1" fill="#4F46E5" opacity="0.3"/>
+    <rect x="62" y="60" width="16" height="8" rx="1" fill="#4F46E5" opacity="0.3"/>
+  </g>
+
+  <!-- AI Brain icon (bottom center) -->
+  <g transform="translate(210, 270)" filter="url(#softShadow)">
+    <rect width="80" height="70" rx="10" fill="white"/>
+    <circle cx="40" cy="30" r="18" stroke="#7C3AED" stroke-width="2" fill="#F5F3FF"/>
+    <path d="M32 26 Q40 18 48 26" stroke="#7C3AED" stroke-width="1.5" fill="none"/>
+    <path d="M28 32 Q40 24 52 32" stroke="#7C3AED" stroke-width="1.5" fill="none"/>
+    <circle cx="34" cy="30" r="2" fill="#7C3AED"/>
+    <circle cx="46" cy="30" r="2" fill="#7C3AED"/>
+    <path d="M40 20 V14 M40 46 V52 M24 30 H18 M56 30 H62" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="40" y="65" text-anchor="middle" fill="#7C3AED" font-size="9" font-family="sans-serif" font-weight="500">AI 赋能</text>
+  </g>
+
+  <!-- Stats badge -->
+  <g transform="translate(380, 260)" filter="url(#softShadow)">
+    <rect width="140" height="65" rx="10" fill="white"/>
+    <text x="70" y="28" text-anchor="middle" fill="#4F46E5" font-size="20" font-family="sans-serif" font-weight="700">10,000+</text>
+    <text x="70" y="48" text-anchor="middle" fill="#6B7280" font-size="10" font-family="sans-serif">企业信赖之选</text>
+    <path d="M50 55 L60 58 L70 52 L80 56 L90 50" stroke="#10B981" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating notification badge -->
+  <g transform="translate(340, 60)" filter="url(#softShadow)">
+    <rect width="80" height="36" rx="8" fill="white"/>
+    <circle cx="16" cy="18" r="8" fill="#ECFDF5"/>
+    <path d="M13 18 L15 20 L19 16" stroke="#10B981" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="48" y="22" text-anchor="middle" fill="#374151" font-size="10" font-family="sans-serif">已部署</text>
+  </g>
+</svg>
