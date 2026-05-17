@@ -1,20 +1,51 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-/* 时代节点设计系统 */
+/* ===== 时代节点官网配色系统 ===== */
+
+/* 默认主题（暖橙） */
 @theme {
-  --color-primary: #1E40AF;
-  --color-primary-light: #3B82F6;
-  --color-accent: #06B6D4;
-  --color-dark: #0F172A;
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-accent: var(--accent);
+  --color-dark: var(--dark);
   --color-body: #1E293B;
   --color-muted: #64748B;
   --color-light: #94A3B8;
   --color-border: #E2E8F0;
   --color-bg-primary: #FFFFFF;
   --color-bg-secondary: #F8FAFC;
-  
   --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+/* 方案A: 活力暖橙 */
+:root, [data-theme="A"] {
+  --primary: #E8590C;
+  --primary-light: #FB923C;
+  --accent: #0891B2;
+  --dark: #1A1A2E;
+  --logo-from: #E8590C;
+  --logo-to: #FB923C;
+}
+
+/* 方案B: 翠绿清新 */
+[data-theme="B"] {
+  --primary: #059669;
+  --primary-light: #34D399;
+  --accent: #F59E0B;
+  --dark: #0F172A;
+  --logo-from: #059669;
+  --logo-to: #34D399;
+}
+
+/* 方案C: 现代靛青 */
+[data-theme="C"] {
+  --primary: #0D9488;
+  --primary-light: #2DD4BF;
+  --accent: #F97316;
+  --dark: #18181B;
+  --logo-from: #0D9488;
+  --logo-to: #2DD4BF;
 }
 
 /* 全局样式 */
@@ -31,7 +62,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 滚动条美化 */
+/* 滚动条 */
 ::-webkit-scrollbar {
   width: 6px;
 }

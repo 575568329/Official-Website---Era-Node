@@ -1,4 +1,5 @@
 ﻿import { lazy, Suspense } from 'react';
+import ThemeSwitcher from './components/ThemeSwitcher';
 
 // 非首屏组件懒加载
 const Navbar = lazy(() => import('./components/Navbar'));
@@ -21,7 +22,7 @@ function LoadingFallback() {
 
 export default function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen"><ThemeSwitcher />
       <Suspense fallback={<LoadingFallback />}>
         <Navbar />
       </Suspense>
@@ -51,3 +52,4 @@ export default function App() {
     </div>
   );
 }
+
