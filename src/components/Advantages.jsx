@@ -64,7 +64,7 @@ export default function Advantages() {
                   <Icon size={22} className="text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
-                <p className="mt-2.5 text-muted text-sm leading-relaxed">{item.description}</p>
+                <p className="mt-2.5 text-slate-600 text-sm leading-relaxed">{item.description}</p>
               </motion.div>
             );
           })}
@@ -73,3 +73,4 @@ export default function Advantages() {
     </section>
   );
 }
+

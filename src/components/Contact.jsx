@@ -53,7 +53,7 @@ export default function Contact() {
                   </select>
                 </div>
                 <textarea name="message" placeholder="您的留言" value={formData.message} onChange={handleChange} rows={4} className={inputClass + " resize-none"} />
-                <button type="submit" className="w-full py-3.5 bg-primary text-white font-semibold rounded-xl hover:bg-blue-800 transition-colors">提交咨询</button>
+                <button type="submit" className="w-full py-3.5 bg-primary text-white font-semibold rounded-xl shadow-lg shadow-primary/30 hover:shadow-xl hover:bg-primary/90 transition-all transition-colors">提交咨询</button>
               </form>
             )}
           </motion.div>
@@ -63,3 +63,4 @@ export default function Contact() {
     </section>
   );
 }
+

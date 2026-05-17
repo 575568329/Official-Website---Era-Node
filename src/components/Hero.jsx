@@ -26,7 +26,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/10 mb-8"
             >
-              <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
+              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               <span className="text-sm text-slate-300">专为中小门店打造</span>
             </motion.div>
 
@@ -117,3 +117,4 @@ export default function Hero() {
     </section>
   );
 }
+

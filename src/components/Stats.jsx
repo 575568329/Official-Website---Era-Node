@@ -58,7 +58,7 @@ export default function Stats() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className={'text-center py-8 md:py-0 md:px-8 ' + (index < 2 ? 'md:border-r md:border-border' : '')}
             >
-              <div className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
+              <div className="text-5xl md:text-6xl font-bold text-primary font-bold">
                 <AnimatedNumber target={stat.value} suffix={stat.suffix} />
               </div>
               <div className="mt-3 text-lg font-semibold text-slate-800">{stat.label}</div>
@@ -73,3 +73,4 @@ export default function Stats() {
     </section>
   );
 }
+
