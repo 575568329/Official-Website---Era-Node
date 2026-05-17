@@ -22,6 +22,8 @@
   --color-hero-outline-hover-border: var(--hero-outline-hover-border, rgba(255,255,255,0.3));
   --color-hero-scroll: var(--hero-scroll, #64748b);
   --color-hero-scroll-hover: var(--hero-scroll-hover, #cbd5e1);
+  --color-nav-text: var(--nav-text, #44403c);
+  --color-nav-text-hover: var(--nav-text-hover, #ea580c);
   --color-body: #1E293B;
   --color-muted: #64748B;
   --color-light: #94A3B8;
@@ -57,6 +59,10 @@
       --hero-outline-hover-border: rgba(255,255,255,0.3);
       --hero-scroll: #64748b;
       --hero-scroll-hover: #cbd5e1;
+      --nav-text: #ffffff;
+      --nav-text-hover: rgba(255,255,255,0.8);
+      --nav-ontop-bg: transparent;
+      --nav-scrolled-bg: rgba(255,255,255,0.9);
       --hero-grid: rgba(255,255,255,0.1);
 }
 
@@ -85,6 +91,10 @@
       --hero-outline-hover-border: rgba(234,88,12,0.3);
       --hero-scroll: #a8a29e;
       --hero-scroll-hover: #57534e;
+      --nav-text: #44403c;
+      --nav-text-hover: #ea580c;
+      --nav-ontop-bg: rgba(255,255,255,0.95);
+      --nav-scrolled-bg: rgba(255,255,255,0.9);
       --hero-grid: rgba(0,0,0,0.06);
 }
 
@@ -113,6 +123,10 @@
       --hero-outline-hover-border: rgba(180,83,9,0.3);
       --hero-scroll: #a8a29e;
       --hero-scroll-hover: #57534e;
+      --nav-text: #44403c;
+      --nav-text-hover: #b45309;
+      --nav-ontop-bg: rgba(255,255,255,0.95);
+      --nav-scrolled-bg: rgba(255,255,255,0.9);
       --hero-grid: rgba(0,0,0,0.06);
 }
 
