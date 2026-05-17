@@ -41,16 +41,14 @@ export default function Hero() {
               className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a
-                href="#contact"
-                className="inline-flex items-center justify-center px-8 py-3 bg-white text-dark font-semibold rounded-xl hover:bg-slate-100 transition-colors"
+                href="#contact" onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }} className="inline-flex items-center justify-center px-8 py-3 bg-white text-dark font-semibold rounded-xl hover:bg-slate-100 transition-colors"
               >
                 免费体验
               </a>
               <a
-                href="#products"
-                className="inline-flex items-center justify-center px-8 py-3 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-colors"
+                href="#products" onClick={(e) => { e.preventDefault(); document.querySelector('#products')?.scrollIntoView({ behavior: 'smooth' }); }} className="inline-flex items-center justify-center px-8 py-3 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-colors"
               >
-                立即了解 →
+                立即了解
               </a>
             </motion.div>
           </div>
@@ -92,3 +90,4 @@ export default function Hero() {
     </section>
   );
 }
+
