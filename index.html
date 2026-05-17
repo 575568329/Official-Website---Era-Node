@@ -1,0 +1,775 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="时代节点EraNode - 面向品牌商/经销商/门店的供应链数字化解决方案，提供小程序商城系统、行业模板、AI客服等一站式数字化服务。">
+  <meta name="keywords" content="供应链数字化,小程序商城,行业模板,AI客服,数字化解决方案,时代节点,EraNode">
+  <meta name="author" content="时代节点 EraNode">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="时代节点 EraNode - 让每一家店都有自己的数字化引擎">
+  <meta property="og:description" content="面向品牌商/经销商/门店的供应链数字化解决方案提供商">
+  <meta property="og:type" content="website">
+
+  <title>时代节点 EraNode | 供应链数字化解决方案</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 样式表（按依赖顺序加载） -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/stats.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/solutions.css">
+  <link rel="stylesheet" href="css/advantages.css">
+  <link rel="stylesheet" href="css/architecture.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- ==================== 导航栏 ==================== -->
+  <nav class="navbar navbar--transparent" role="navigation" aria-label="主导航">
+    <div class="navbar__inner">
+      <!-- Logo -->
+      <a href="#" class="navbar__logo" aria-label="时代节点 首页">
+        <div class="navbar__logo-icon">EN</div>
+        <span>时代节点</span>
+      </a>
+
+      <!-- 桌面菜单 -->
+      <div class="navbar__menu">
+        <a href="#products" class="navbar__link">产品</a>
+        <a href="#solutions" class="navbar__link">解决方案</a>
+        <a href="#advantages" class="navbar__link">优势</a>
+        <a href="#about" class="navbar__link">关于</a>
+        <a href="#contact" class="navbar__link">联系</a>
+        <a href="#contact" class="btn btn--primary btn--sm navbar__cta">免费体验</a>
+      </div>
+
+      <!-- 移动端汉堡按钮 -->
+      <button class="navbar__hamburger" aria-label="打开菜单" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- 移动端全屏菜单 -->
+      <div class="navbar__mobile-menu" role="dialog" aria-label="移动端导航">
+        <a href="#products" class="navbar__link">产品</a>
+        <a href="#solutions" class="navbar__link">解决方案</a>
+        <a href="#advantages" class="navbar__link">优势</a>
+        <a href="#about" class="navbar__link">关于</a>
+        <a href="#contact" class="navbar__link">联系我们</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== Hero 首屏 ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__grid"></div>
+    <div class="hero__particles">
+      <div class="hero__particle"></div>
+      <div class="hero__particle"></div>
+      <div class="hero__particle"></div>
+      <div class="hero__particle"></div>
+      <div class="hero__particle"></div>
+      <div class="hero__particle"></div>
+    </div>
+
+    <div class="hero__content">
+      <h1 class="hero__title">
+        让每一家店都有<br><span class="hero__title-accent">数字化引擎</span>
+      </h1>
+      <p class="hero__subtitle">
+        时代节点为中小零售品牌、连锁门店提供开箱即用的供应链数字化方案。<br>
+        行业模板一键部署，AI 驱动智能运营，让你的生意轻松上云。
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">申请免费试用</a>
+        <a href="#products" class="btn btn--outline">了解产品 →</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>向下滚动</span>
+      <div class="hero__scroll-hint-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ==================== 信任数字 ==================== -->
+  <section class="stats" id="stats">
+    <div class="stats__grid">
+      <div class="stats__item fade-in stagger-1">
+        <div class="stats__number">
+          <span data-count="5" data-suffix="+">0</span>
+        </div>
+        <div class="stats__label">行业模板</div>
+      </div>
+      <div class="stats__item fade-in stagger-2">
+        <div class="stats__number">
+          <span data-count="99" data-suffix="%">0</span>
+        </div>
+        <div class="stats__label">客户满意度</div>
+      </div>
+      <div class="stats__item fade-in stagger-3">
+        <div class="stats__number">
+          <span data-count="30" data-suffix="min">0</span>
+        </div>
+        <div class="stats__label">极速部署</div>
+      </div>
+      <div class="stats__item fade-in stagger-4">
+        <div class="stats__number">
+          <span data-count="24" data-suffix="/7">0</span>
+        </div>
+        <div class="stats__label">技术支持</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 产品展示 ==================== -->
+  <section class="section products" id="products">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__label">核心产品</span>
+        <h2 class="section__title">一套系统，覆盖全业务场景</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle">
+          从线上商城到门店管理，从供应链到客户运营，一个平台搞定
+        </p>
+      </div>
+
+      <div class="products__grid">
+        <!-- 产品1：小程序商城 -->
+        <article class="product-card fade-in stagger-1">
+          <div class="product-card__icon">🛍️</div>
+          <h3 class="product-card__title">小程序商城</h3>
+          <p class="product-card__desc">
+            微信生态原生体验，支持商品展示、在线下单、支付核销、配送追踪全链路
+          </p>
+          <div class="product-card__details">
+            <div class="product-card__detail-list">
+              <div class="product-card__detail-item">多规格 SKU 自由组合</div>
+              <div class="product-card__detail-item">拼团 / 秒杀 / 优惠券营销</div>
+              <div class="product-card__detail-item">微信支付 / 货到付款</div>
+              <div class="product-card__detail-item">配送 & 自提核销</div>
+            </div>
+          </div>
+          <div class="product-card__action">
+            了解详情 <span class="product-card__action-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- 产品2：门店管理 -->
+        <article class="product-card fade-in stagger-2">
+          <div class="product-card__icon">🏪</div>
+          <h3 class="product-card__title">门店管理后台</h3>
+          <p class="product-card__desc">
+            极简 B 端交互，店员零培训上手。库存、订单、会员一屏掌控
+          </p>
+          <div class="product-card__details">
+            <div class="product-card__detail-list">
+              <div class="product-card__detail-item">多门店统一管理</div>
+              <div class="product-card__detail-item">实时库存预警</div>
+              <div class="product-card__detail-item">员工权限分级</div>
+              <div class="product-card__detail-item">经营数据看板</div>
+            </div>
+          </div>
+          <div class="product-card__action">
+            了解详情 <span class="product-card__action-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- 产品3：AI 智能客服 -->
+        <article class="product-card fade-in stagger-3">
+          <div class="product-card__icon">🤖</div>
+          <h3 class="product-card__title">AI 智能客服</h3>
+          <p class="product-card__desc">
+            基于大语言模型的智能客服，自动应答 80% 常见问题，24 小时在线
+          </p>
+          <div class="product-card__details">
+            <div class="product-card__detail-list">
+              <div class="product-card__detail-item">商品 & 订单自动查询</div>
+              <div class="product-card__detail-item">多轮对话理解意图</div>
+              <div class="product-card__detail-item">无缝转人工客服</div>
+              <div class="product-card__detail-item">对话数据持续学习</div>
+            </div>
+          </div>
+          <div class="product-card__action">
+            了解详情 <span class="product-card__action-arrow">→</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 行业解决方案 ==================== -->
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__label">解决方案</span>
+        <h2 class="section__title">五大行业，即开即用</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle">
+          深耕行业场景，预制业务模板，30 分钟完成上线
+        </p>
+      </div>
+    </div>
+
+    <!-- Tab 按钮 -->
+    <div class="solutions__tabs fade-in" role="tablist">
+      <button class="solutions__tab solutions__tab--active" data-tab="cvs" role="tab" aria-selected="true">
+        <span class="solutions__tab-icon">🏪</span> 便利店
+      </button>
+      <button class="solutions__tab" data-tab="tea" role="tab" aria-selected="false">
+        <span class="solutions__tab-icon">🧋</span> 茶饮
+      </button>
+      <button class="solutions__tab" data-tab="food" role="tab" aria-selected="false">
+        <span class="solutions__tab-icon">🍜</span> 餐饮
+      </button>
+      <button class="solutions__tab" data-tab="fashion" role="tab" aria-selected="false">
+        <span class="solutions__tab-icon">👕</span> 服装
+      </button>
+      <button class="solutions__tab" data-tab="fresh" role="tab" aria-selected="false">
+        <span class="solutions__tab-icon">🥬</span> 生鲜
+      </button>
+    </div>
+
+    <!-- Tab 面板 -->
+    <div class="solutions__panels">
+      <!-- 便利店 -->
+      <div class="solutions__panel solutions__panel--active" data-panel="cvs" role="tabpanel">
+        <div class="solutions__content">
+          <div class="solutions__info">
+            <h3 class="solutions__panel-title">便利店数字化解决方案</h3>
+            <p class="solutions__panel-desc">
+              覆盖社区便利店、连锁超市的全场景。线上线下库存同步，会员积分自助核销，社区团购一键发布。
+            </p>
+            <div class="solutions__features">
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">📦</div>
+                <div class="solutions__feature-text">
+                  <h4>智能补货</h4>
+                  <p>基于销售数据自动生成补货建议</p>
+                </div>
+              </div>
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">👥</div>
+                <div class="solutions__feature-text">
+                  <h4>社区团购</h4>
+                  <p>微信群接龙 + 小程序下单无缝衔接</p>
+                </div>
+              </div>
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">📱</div>
+                <div class="solutions__feature-text">
+                  <h4>自助收银</h4>
+                  <p>扫码即付，减少排队等候</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solutions__visual">
+            <div class="solutions__mockup">
+              <div class="solutions__mockup-header">便利店 · 小程序商城</div>
+              <div class="solutions__mockup-body">
+                <div class="solutions__mockup-banner"></div>
+                <div class="solutions__mockup-grid">
+                  <div class="solutions__mockup-item">🥤</div>
+                  <div class="solutions__mockup-item">🍞</div>
+                  <div class="solutions__mockup-item">🥛</div>
+                  <div class="solutions__mockup-item">🍫</div>
+                  <div class="solutions__mockup-item">☕</div>
+                  <div class="solutions__mockup-item">🍩</div>
+                </div>
+                <div class="solutions__mockup-btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 茶饮 -->
+      <div class="solutions__panel" data-panel="tea" role="tabpanel">
+        <div class="solutions__content">
+          <div class="solutions__info">
+            <h3 class="solutions__panel-title">茶饮连锁数字化解决方案</h3>
+            <p class="solutions__panel-desc">
+              为新茶饮品牌量身打造。在线点单 + 门店取餐 + 外卖配送，支持多门店、多口味定制。
+            </p>
+            <div class="solutions__features">
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">☕</div>
+                <div class="solutions__feature-text">
+                  <h4>在线点单</h4>
+                  <p>提前下单，到店即取，减少排队</p>
+                </div>
+              </div>
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">🎯</div>
+                <div class="solutions__feature-text">
+                  <h4>口味定制</h4>
+                  <p>糖度、冰度、加料自由搭配</p>
+                </div>
+              </div>
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">🎁</div>
+                <div class="solutions__feature-text">
+                  <h4>会员储值</h4>
+                  <p>充值优惠 + 积分兑换 + 生日特权</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solutions__visual">
+            <div class="solutions__mockup">
+              <div class="solutions__mockup-header">茶饮 · 小程序商城</div>
+              <div class="solutions__mockup-body">
+                <div class="solutions__mockup-banner"></div>
+                <div class="solutions__mockup-grid">
+                  <div class="solutions__mockup-item">🧋</div>
+                  <div class="solutions__mockup-item">🍵</div>
+                  <div class="solutions__mockup-item">🥤</div>
+                  <div class="solutions__mockup-item">🧊</div>
+                  <div class="solutions__mockup-item">🥛</div>
+                  <div class="solutions__mockup-item">🍯</div>
+                </div>
+                <div class="solutions__mockup-btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 餐饮 -->
+      <div class="solutions__panel" data-panel="food" role="tabpanel">
+        <div class="solutions__content">
+          <div class="solutions__info">
+            <h3 class="solutions__panel-title">餐饮行业数字化解决方案</h3>
+            <p class="solutions__panel-desc">
+              覆盖堂食点餐、外卖配送、排队取号全流程。扫码点单、后厨打印、配送追踪一体化。
+            </p>
+            <div class="solutions__features">
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">📋</div>
+                <div class="solutions__feature-text">
+                  <h4>扫码点餐</h4>
+                  <p>桌面二维码，自助浏览下单</p>
+                </div>
+              </div>
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">🖨️</div>
+                <div class="solutions__feature-text">
+                  <h4>后厨联动</h4>
+                  <p>订单实时推送，自动打印小票</p>
+                </div>
+              </div>
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">📊</div>
+                <div class="solutions__feature-text">
+                  <h4>菜品分析</h4>
+                  <p>热销排行、时段分析、利润看板</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solutions__visual">
+            <div class="solutions__mockup">
+              <div class="solutions__mockup-header">餐饮 · 小程序商城</div>
+              <div class="solutions__mockup-body">
+                <div class="solutions__mockup-banner"></div>
+                <div class="solutions__mockup-grid">
+                  <div class="solutions__mockup-item">🍜</div>
+                  <div class="solutions__mockup-item">🍛</div>
+                  <div class="solutions__mockup-item">🍱</div>
+                  <div class="solutions__mockup-item">🥟</div>
+                  <div class="solutions__mockup-item">🍲</div>
+                  <div class="solutions__mockup-item">🥡</div>
+                </div>
+                <div class="solutions__mockup-btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 服装 -->
+      <div class="solutions__panel" data-panel="fashion" role="tabpanel">
+        <div class="solutions__content">
+          <div class="solutions__info">
+            <h3 class="solutions__panel-title">服装行业数字化解决方案</h3>
+            <p class="solutions__panel-desc">
+              支持多色多码 SKU、穿搭推荐、会员穿搭记录。线上线下库存实时同步，换季促销灵活配置。
+            </p>
+            <div class="solutions__features">
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">👔</div>
+                <div class="solutions__feature-text">
+                  <h4>多码管理</h4>
+                  <p>颜色 × 尺码自动组合 SKU</p>
+                </div>
+              </div>
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">🏷️</div>
+                <div class="solutions__feature-text">
+                  <h4>灵活促销</h4>
+                  <p>满减、折扣、限时秒杀灵活搭配</p>
+                </div>
+              </div>
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">👗</div>
+                <div class="solutions__feature-text">
+                  <h4>穿搭推荐</h4>
+                  <p>AI 智能推荐搭配方案</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solutions__visual">
+            <div class="solutions__mockup">
+              <div class="solutions__mockup-header">服装 · 小程序商城</div>
+              <div class="solutions__mockup-body">
+                <div class="solutions__mockup-banner"></div>
+                <div class="solutions__mockup-grid">
+                  <div class="solutions__mockup-item">👕</div>
+                  <div class="solutions__mockup-item">👖</div>
+                  <div class="solutions__mockup-item">👗</div>
+                  <div class="solutions__mockup-item">🧥</div>
+                  <div class="solutions__mockup-item">👟</div>
+                  <div class="solutions__mockup-item">🎒</div>
+                </div>
+                <div class="solutions__mockup-btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 生鲜 -->
+      <div class="solutions__panel" data-panel="fresh" role="tabpanel">
+        <div class="solutions__content">
+          <div class="solutions__info">
+            <h3 class="solutions__panel-title">生鲜行业数字化解决方案</h3>
+            <p class="solutions__panel-desc">
+              产地直发 + 社区团购 + 门店自提。保质期管理、冷链配送、损耗追踪全链路覆盖。
+            </p>
+            <div class="solutions__features">
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">🥬</div>
+                <div class="solutions__feature-text">
+                  <h4>保质期管理</h4>
+                  <p>临期预警、自动促销、损耗分析</p>
+                </div>
+              </div>
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">🚚</div>
+                <div class="solutions__feature-text">
+                  <h4>冷链配送</h4>
+                  <p>温控追踪、准时达、配送路线优化</p>
+                </div>
+              </div>
+              <div class="solutions__feature">
+                <div class="solutions__feature-icon">🏘️</div>
+                <div class="solutions__feature-text">
+                  <h4>社区团购</h4>
+                  <p>团长管理、自提点配置、分拣配货</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solutions__visual">
+            <div class="solutions__mockup">
+              <div class="solutions__mockup-header">生鲜 · 小程序商城</div>
+              <div class="solutions__mockup-body">
+                <div class="solutions__mockup-banner"></div>
+                <div class="solutions__mockup-grid">
+                  <div class="solutions__mockup-item">🍎</div>
+                  <div class="solutions__mockup-item">🥩</div>
+                  <div class="solutions__mockup-item">🐟</div>
+                  <div class="solutions__mockup-item">🥬</div>
+                  <div class="solutions__mockup-item">🥚</div>
+                  <div class="solutions__mockup-item">🍚</div>
+                </div>
+                <div class="solutions__mockup-btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 核心优势 ==================== -->
+  <section class="section advantages" id="advantages">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__label">为什么选择我们</span>
+        <h2 class="section__title">四大核心优势</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="advantages__grid">
+        <article class="advantage-card fade-in stagger-1">
+          <div class="advantage-card__icon">⚡</div>
+          <div>
+            <h3 class="advantage-card__title">极速部署</h3>
+            <p class="advantage-card__desc">
+              行业模板预配置，30 分钟完成初始化。无需漫长开发周期，注册即上线。
+            </p>
+          </div>
+        </article>
+
+        <article class="advantage-card fade-in stagger-2">
+          <div class="advantage-card__icon">🎯</div>
+          <div>
+            <h3 class="advantage-card__title">一套前端多行业</h3>
+            <p class="advantage-card__desc">
+              统一代码库，模块化架构。切换行业模板只需配置，不用重新开发。
+            </p>
+          </div>
+        </article>
+
+        <article class="advantage-card fade-in stagger-3">
+          <div class="advantage-card__icon">🧠</div>
+          <div>
+            <h3 class="advantage-card__title">AI 驱动</h3>
+            <p class="advantage-card__desc">
+              内置大语言模型客服，智能推荐、智能补货、智能分析，让运营更轻松。
+            </p>
+          </div>
+        </article>
+
+        <article class="advantage-card fade-in stagger-4">
+          <div class="advantage-card__icon">🎯</div>
+          <div>
+            <h3 class="advantage-card__title">极简 B 端</h3>
+            <p class="advantage-card__desc">
+              管理后台专为非技术人员设计，店员零培训即可上手，操作直观高效。
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 技术架构 ==================== -->
+  <section class="architecture" id="architecture">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__label">技术实力</span>
+        <h2 class="section__title">现代化技术架构</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle">
+          点击各层节点查看技术详情
+        </p>
+      </div>
+    </div>
+
+    <div class="architecture__diagram fade-in">
+      <!-- 应用层 -->
+      <div class="arch__layer">
+        <div class="arch__layer-label">应用层 · 用户触达</div>
+        <div class="arch__layer-nodes">
+          <div class="arch__node arch__node--app" data-layer="app">微信小程序</div>
+          <div class="arch__node arch__node--app" data-layer="app">H5 移动端</div>
+          <div class="arch__node arch__node--app" data-layer="app">管理后台</div>
+          <div class="arch__node arch__node--app" data-layer="app">AI 客服</div>
+        </div>
+      </div>
+
+      <div class="arch__connector">
+        <div class="arch__connector-group"></div>
+      </div>
+
+      <!-- 业务层 -->
+      <div class="arch__layer">
+        <div class="arch__layer-label">业务层 · 核心能力</div>
+        <div class="arch__layer-nodes">
+          <div class="arch__node arch__node--biz" data-layer="biz">商品中心</div>
+          <div class="arch__node arch__node--biz" data-layer="biz">订单引擎</div>
+          <div class="arch__node arch__node--biz" data-layer="biz">会员系统</div>
+          <div class="arch__node arch__node--biz" data-layer="biz">营销平台</div>
+          <div class="arch__node arch__node--biz" data-layer="biz">库存管理</div>
+        </div>
+      </div>
+
+      <div class="arch__connector">
+        <div class="arch__connector-group"></div>
+      </div>
+
+      <!-- 数据层 -->
+      <div class="arch__layer">
+        <div class="arch__layer-label">数据层 · 基础设施</div>
+        <div class="arch__layer-nodes">
+          <div class="arch__node arch__node--data" data-layer="data">MySQL</div>
+          <div class="arch__node arch__node--data" data-layer="data">Redis</div>
+          <div class="arch__node arch__node--data" data-layer="data">OSS 存储</div>
+          <div class="arch__node arch__node--data" data-layer="data">监控日志</div>
+        </div>
+      </div>
+
+      <!-- 展开详情 -->
+      <div class="arch__detail">
+        <h4 class="arch__detail-title"></h4>
+        <div class="arch__detail-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 关于我们 ==================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__content">
+        <div class="about__text fade-in-left">
+          <span class="section__label">关于时代节点</span>
+          <h3>做最懂零售的<br>数字化基础设施</h3>
+          <p>
+            时代节点成立于数字化浪潮之中，我们相信：每一家小店都值得拥有先进的数字工具。
+            我们团队深耕零售供应链领域，深刻理解中小商户的痛点——缺技术、缺预算、缺时间。
+          </p>
+          <p>
+            因此，我们打造了「开箱即用」的数字化解决方案：行业模板一键部署、AI 客服降低人力成本、
+            极简后台零学习门槛。让你专注于经营生意，把技术的事交给我们。
+          </p>
+          <div class="about__values">
+            <span class="about__value">客户第一</span>
+            <span class="about__value">简单至上</span>
+            <span class="about__value">技术驱动</span>
+            <span class="about__value">持续进化</span>
+          </div>
+        </div>
+
+        <div class="about__visual fade-in-right">
+          <div class="about__code-block">
+            <div class="about__code-line"><span class="about__code-comment">// 让每一家店数字化</span></div>
+            <div class="about__code-line"><span class="about__code-keyword">const</span> eraNode = <span class="about__code-func">create</span>({</div>
+            <div class="about__code-line">  industry: <span class="about__code-string">'茶饮'</span>,</div>
+            <div class="about__code-line">  template: <span class="about__code-string">'tea-shop'</span>,</div>
+            <div class="about__code-line">  ai: <span class="about__code-keyword">true</span>,</div>
+            <div class="about__code-line">});</div>
+            <div class="about__code-line"><span class="about__code-func">eraNode</span>.<span class="about__code-func">deploy</span>(); <span class="about__code-comment">// 30min ✅</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 联系我们 ==================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__label">联系我们</span>
+        <h2 class="section__title">开启你的数字化之旅</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="contact__wrapper fade-in">
+        <!-- 左侧联系信息 -->
+        <div class="contact__info">
+          <h3>期待与你交流</h3>
+          <p>
+            无论你是品牌方、经销商还是门店经营者，我们都乐于倾听你的需求。
+            留下联系方式，我们会在 24 小时内与你取得联系。
+          </p>
+
+          <div class="contact__channels">
+            <div class="contact__channel">
+              <div class="contact__channel-icon">📧</div>
+              <div class="contact__channel-text">
+                <span class="contact__channel-label">邮箱</span>
+                <span class="contact__channel-value">contact@eranode.com</span>
+              </div>
+            </div>
+            <div class="contact__channel">
+              <div class="contact__channel-icon">📱</div>
+              <div class="contact__channel-text">
+                <span class="contact__channel-label">电话</span>
+                <span class="contact__channel-value">400-888-0000</span>
+              </div>
+            </div>
+            <div class="contact__channel">
+              <div class="contact__channel-icon">💬</div>
+              <div class="contact__channel-text">
+                <span class="contact__channel-label">微信</span>
+                <span class="contact__channel-value">EraNode_Official</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧表单 -->
+        <div class="contact__form-wrapper">
+          <form class="contact__form" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">姓名 *</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="你的姓名" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="phone">电话 *</label>
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="联系电话" required>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="company">公司名称</label>
+              <input class="form__input" type="text" id="company" name="company" placeholder="你的公司或店铺名称">
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="industry">所属行业</label>
+              <input class="form__input" type="text" id="industry" name="industry" placeholder="如：便利店、茶饮、餐饮...">
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="message">需求描述</label>
+              <textarea class="form__textarea" id="message" name="message" placeholder="简单描述你的需求，我们会为你定制方案..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form__submit">
+              提交咨询
+            </button>
+          </form>
+
+          <!-- 提交成功消息 -->
+          <div class="form__success">
+            <div class="form__success-icon">✅</div>
+            <h4 class="form__success-title">提交成功！</h4>
+            <p class="form__success-desc">
+              感谢你的咨询，我们会在 24 小时内与你联系。<br>
+              请保持电话畅通。
+            </p>
+            <button class="btn btn--outline btn--sm form__reset-btn">再次提交</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 页脚 ==================== -->
+  <footer style="text-align:center; padding: 2rem 1.5rem; border-top: 1px solid var(--border-subtle); background: var(--bg-dark);">
+    <div style="max-width: var(--container-max); margin: 0 auto;">
+      <p style="color: var(--text-muted); font-size: 0.85rem;">
+        © 2025 时代节点 EraNode. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- 主脚本（ES Module） -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

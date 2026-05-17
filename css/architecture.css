@@ -1,0 +1,191 @@
+﻿/* ========================================
+ * 技术架构 - CSS 架构图
+ * ======================================== */
+
+.architecture {
+  position: relative;
+  padding: var(--space-4xl) 0;
+  background: var(--bg-section);
+  overflow: hidden;
+}
+
+.architecture__diagram {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* ---- 架构层级 ---- */
+.arch__layer {
+  margin-bottom: var(--space-lg);
+  position: relative;
+}
+
+.arch__layer-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+  padding-left: var(--space-md);
+}
+
+.arch__layer-nodes {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+/* ---- 架构节点 ---- */
+.arch__node {
+  padding: 16px 24px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all var(--transition-smooth);
+  position: relative;
+  cursor: default;
+  min-width: 120px;
+}
+
+.arch__node:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* 应用层 - 亮青 */
+.arch__node--app {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(6, 182, 212, 0.05));
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  color: var(--color-cyan-light);
+}
+
+.arch__node--app:hover {
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.2);
+}
+
+/* 业务层 - 靛蓝 */
+.arch__node--biz {
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.2), rgba(30, 64, 175, 0.08));
+  border: 1px solid rgba(30, 64, 175, 0.4);
+  color: #93C5FD;
+}
+
+.arch__node--biz:hover {
+  border-color: #3B82F6;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+/* 数据层 - 深色 */
+.arch__node--data {
+  background: linear-gradient(135deg, rgba(15, 35, 71, 0.8), rgba(10, 22, 40, 0.8));
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.arch__node--data:hover {
+  border-color: var(--border-accent);
+}
+
+/* ---- 连接线（CSS伪元素） ---- */
+.arch__connector {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-sm) 0;
+  position: relative;
+}
+
+.arch__connector::before {
+  content: '';
+  width: 2px;
+  height: 24px;
+  background: linear-gradient(to bottom, var(--color-cyan), transparent);
+  opacity: 0.4;
+}
+
+.arch__connector-group {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  width: 100%;
+  position: relative;
+}
+
+.arch__connector-group::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--color-cyan), transparent);
+  opacity: 0.3;
+}
+
+/* ---- 架构详情面板（hover展开） ---- */
+.arch__detail {
+  max-width: 700px;
+  margin: var(--space-2xl) auto 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all var(--transition-smooth);
+  opacity: 0;
+}
+
+.arch__detail--open {
+  max-height: 500px;
+  padding: var(--space-xl);
+  opacity: 1;
+  border-color: var(--border-accent);
+}
+
+.arch__detail-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.arch__detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.arch__detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.arch__detail-item::before {
+  content: '▸';
+  color: var(--color-cyan);
+  flex-shrink: 0;
+}
+
+/* ---- 响应式 ---- */
+@media (max-width: 768px) {
+  .arch__layer-nodes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arch__node {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .arch__detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
