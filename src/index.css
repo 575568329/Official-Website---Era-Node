@@ -62,7 +62,8 @@
       --nav-text: #ffffff;
       --nav-text-hover: rgba(255,255,255,0.8);
       --nav-ontop-bg: transparent;
-      --nav-scrolled-bg: rgba(255,255,255,0.9);`n      --nav-scrolled-text: #1e293b;
+      --nav-scrolled-bg: rgba(255,255,255,0.9);
+      --nav-scrolled-text: #1e293b;
       --hero-grid: rgba(255,255,255,0.1);
 }
 
@@ -94,7 +95,8 @@
       --nav-text: #44403c;
       --nav-text-hover: #ea580c;
       --nav-ontop-bg: transparent;
-      --nav-scrolled-bg: rgba(255,255,255,0.9);`n      --nav-scrolled-text: #1e293b;
+      --nav-scrolled-bg: rgba(255,255,255,0.9);
+      --nav-scrolled-text: #1e293b;
       --hero-grid: rgba(0,0,0,0.06);
 }
 
@@ -126,7 +128,8 @@
       --nav-text: #334155;
       --nav-text-hover: #2563eb;
       --nav-ontop-bg: transparent;
-      --nav-scrolled-bg: rgba(255,255,255,0.9);`n      --nav-scrolled-text: #1e293b;
+      --nav-scrolled-bg: rgba(255,255,255,0.9);
+      --nav-scrolled-text: #1e293b;
       --hero-grid: rgba(0,0,0,0.05);
 }
 
