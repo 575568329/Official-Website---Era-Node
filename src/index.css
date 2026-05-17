@@ -93,7 +93,7 @@
       --hero-scroll-hover: #57534e;
       --nav-text: #44403c;
       --nav-text-hover: #ea580c;
-      --nav-ontop-bg: rgba(255,255,255,0.95);
+      --nav-ontop-bg: transparent;
       --nav-scrolled-bg: rgba(255,255,255,0.9);
       --hero-grid: rgba(0,0,0,0.06);
 }
@@ -125,7 +125,7 @@
       --hero-scroll-hover: #475569;
       --nav-text: #334155;
       --nav-text-hover: #2563eb;
-      --nav-ontop-bg: rgba(255,255,255,0.95);
+      --nav-ontop-bg: transparent;
       --nav-scrolled-bg: rgba(255,255,255,0.9);
       --hero-grid: rgba(0,0,0,0.05);
 }
