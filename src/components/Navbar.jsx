@@ -33,7 +33,9 @@ export default function Navbar() {
       : 'var(--nav-ontop-bg, transparent)',
     backdropFilter: scrolled ? 'blur(12px)' : 'none',
     boxShadow: scrolled ? '0 1px 3px rgba(0,0,0,0.08)' : 'none',
-    color: 'var(--nav-text, #1e293b)',
+    color: scrolled
+      ? 'var(--nav-scrolled-text, #1e293b)'
+      : 'var(--nav-text, #1e293b)',
   };
 
   return (
